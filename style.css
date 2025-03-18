@@ -1,0 +1,215 @@
+/*------------- font uploaded------- */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/*------------- font uploaded------- */
+/* ------------RESET CSS---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* ------------RESET CSS---------- */
+/*----------------- common css---------- */
+:root {
+  --primary: #b4f461;
+  --secondary: #f9f7f3;
+}
+
+/* -----layout css----- */
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+a {
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+h4 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+h5 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* -----layout css----- */
+
+/* nav section */
+.header-section-inner {
+  background-color: var(--secondary);
+  position: relative;
+}
+.fade-in {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: var(--secondary);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+}
+
+.main-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 24px;
+}
+
+.btn {
+  border-radius: 12px;
+  width: 20%;
+  cursor: pointer;
+}
+.btn a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: var(--primary);
+  padding: 12px 32px;
+  border-radius: 5px;
+}
+.logo-with-name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  gap: 10px;
+}
+.logo-with-name img {
+  width: 100%;
+  max-width: 48px;
+}
+.logo-with-name p {
+  font-size: 20px;
+  font-weight: 600;
+}
+.dollar {
+  display: flex;
+  width: 20%;
+  justify-content: end;
+  align-items: center;
+  gap: 5px;
+  color: #111111;
+}
+.dollar p {
+  font-weight: 500;
+}
+
+.featured-button-inner {
+  display: flex;
+  justify-content: center;
+  padding-top: 80px;
+}
+.buttons {
+  display: flex;
+  gap: 10px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.buttons button {
+  border: 1px solid #f0f0f0;
+  padding: 10px 32px;
+  border-radius: 5px;
+  background-color: unset;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.buttons button:focus {
+  background-color: #b4f461;
+}
+.card-wrapper {
+  margin-top: 32px;
+  padding: 32px;
+  border: 1px solid #f0f0f0;
+}
+.card-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+}
+.card-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+}
+.card-details-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 24px;
+}
+.card-dollar {
+  width: fit-content;
+  min-width: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: #f0f0f0;
+  padding: 8px 10px;
+  border-radius: 5px;
+}
+.card-dollar p {
+  font-size: 16px;
+}
+.card-dollar img {
+  width: 100%;
+  max-width: 24px;
+}
+
+.card-heading h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.card-paragraph p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 26px;
+}
+
+.card-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.card-form input {
+  width: 522px;
+  padding: 14px 10px;
+  border: 1px solid #f0f0f0;
+}
+.card-form button {
+  width: 522px;
+  padding: 14px 10px;
+  background-color: var(--primary);
+  border: 0;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.donation-history {
+  display: none;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 50px;
+}
+#added-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
