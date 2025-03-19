@@ -124,7 +124,7 @@ h5 {
 .featured-button-inner {
   display: flex;
   justify-content: center;
-  padding-top: 80px;
+  padding-top: 40px;
 }
 .buttons {
   display: flex;
@@ -161,6 +161,16 @@ h5 {
   justify-content: space-between;
   align-items: center;
   gap: 32px;
+}
+.card-photo {
+  width: 50%;
+}
+.card-details {
+  width: 50%;
+}
+.card-photo img {
+  width: 100%;
+  max-width: 522px;
 }
 .card-details {
   display: flex;
@@ -301,3 +311,61 @@ h5 {
   font-size: 30px;
 }
 /* ----------accordion----------- */
+
+@media only screen and (max-width: 600px) {
+  .card-wrapper {
+    padding: 20px;
+  }
+  .featured-button-inner {
+    padding-top: 10px;
+  }
+  .logo-with-name p {
+    display: none;
+  }
+  .btn {
+    width: 40%;
+  }
+  .logo-with-name {
+    width: 40%;
+  }
+  .dollar {
+    width: 40%;
+  }
+  .card-inner {
+    flex-direction: column;
+  }
+  .card-photo {
+    width: 100%;
+  }
+  .card-details {
+    width: 100%;
+  }
+  #input-balance {
+    width: 100%;
+  }
+  #donate-button-1 {
+    width: 100%;
+  }
+  #input-balance-2 {
+    width: 100%;
+  }
+  #donate-button-2 {
+    width: 100%;
+  }
+  #input-balance-3 {
+    width: 100%;
+  }
+  #donate-button-3 {
+    width: 100%;
+  }
+  /* blog page */
+  .faq-wrapper {
+    padding: 20px;
+  }
+  .content {
+    width: 100% !important;
+  }
+  .accordion .container.active .content {
+    height: 200px;
+  }
+}
