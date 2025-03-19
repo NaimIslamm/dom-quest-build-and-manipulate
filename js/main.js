@@ -44,9 +44,7 @@ document
       alert("Invalid Amount");
       return;
     }
-    if (inputBalance) {
-      alert("Added Your Money");
-    }
+
     if (isNaN(inputBalance)) {
       alert("Invalid Amount");
       return;
@@ -62,8 +60,10 @@ document
       alert("not Enought Money");
       return;
     }
-
     document.getElementById("added-money").innerText = newBalance;
+    if (inputBalance) {
+      alert("Added Your Money");
+    }
 
     const div = document.createElement("div");
     div.style.padding = "20px";
@@ -71,7 +71,7 @@ document
     div.style.fontSize = "25px 20px";
     div.style.fontWeight = "700";
 
-    div.innerHTML = `<p>${inputBalance}Taka is Donated for famine-2024 at Feni, Bangladesh</p>`;
+    div.innerHTML = `<p>${inputBalance}Donate for Flood at Noakhali, Bangladesh</p>`;
 
     document.getElementById("added-container").appendChild(div);
     // for clear the input field
@@ -90,9 +90,7 @@ document
       alert("Invalid Amount");
       return;
     }
-    if (inputBalance) {
-      alert("Added Your Money");
-    }
+
     if (isNaN(inputBalance)) {
       alert("Invalid Amount");
       return;
@@ -110,7 +108,9 @@ document
     }
 
     document.getElementById("added-money-2").innerText = newBalance;
-
+    if (inputBalance) {
+      alert("Added Your Money");
+    }
     const div = document.createElement("div");
     div.style.padding = "20px";
     div.style.border = "1px solid #f0f0f0";
@@ -136,9 +136,7 @@ document
       alert("Invalid Amount");
       return;
     }
-    if (inputBalance) {
-      alert("Added Your Money");
-    }
+
     if (isNaN(inputBalance)) {
       alert("Invalid Amount");
       return;
@@ -156,7 +154,9 @@ document
     }
 
     document.getElementById("added-money-3").innerText = newBalance;
-
+    if (inputBalance) {
+      alert("Added Your Money");
+    }
     const div = document.createElement("div");
     div.style.padding = "20px";
     div.style.border = "1px solid #f0f0f0";
@@ -171,3 +171,7 @@ document
   });
 
 //   end for quota Movement--3rd-card-------------
+
+document.getElementById("blog-button").addEventListener("click", function () {
+  (window.location.href = "/blog.html"), "_blank";
+});
