@@ -89,6 +89,10 @@ h5 {
   width: 100%;
   max-width: 48px;
 }
+.logo-with-name a {
+  text-decoration: none;
+  color: #111111;
+}
 .logo-with-name p {
   font-size: 20px;
   font-weight: 600;
@@ -296,3 +300,4 @@ h5 {
   font-family: "Font Awesome 6 Free";
   font-size: 30px;
 }
+/* ----------accordion----------- */
