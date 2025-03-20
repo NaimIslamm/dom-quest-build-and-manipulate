@@ -1,22 +1,22 @@
 // for scrolling js--
-let scrollpos = window.scrollY;
-const header = document.querySelector("nav");
-const header_height = header.offsetHeight;
+// let scrollpos = window.scrollY;
+// const header = document.querySelector("nav");
+// const header_height = header.offsetHeight;
 
-const add_class_on_scroll = () => header.classList.add("fade-in");
-const remove_class_on_scroll = () => header.classList.remove("fade-in");
+// const add_class_on_scroll = () => header.classList.add("fade-in");
+// const remove_class_on_scroll = () => header.classList.remove("fade-in");
 
-window.addEventListener("scroll", function () {
-  scrollpos = window.scrollY;
+// window.addEventListener("scroll", function () {
+//   scrollpos = window.scrollY;
 
-  if (scrollpos >= header_height) {
-    add_class_on_scroll();
-  } else {
-    remove_class_on_scroll();
-  }
+//   if (scrollpos >= header_height) {
+//     add_class_on_scroll();
+//   } else {
+//     remove_class_on_scroll();
+//   }
 
-  console.log(scrollpos);
-});
+//   console.log(scrollpos);
+// });
 
 // history page event listener--------
 
@@ -175,3 +175,21 @@ document
 document.getElementById("blog-button").addEventListener("click", function () {
   (window.location.href = "/blog.html"), "_blank";
 });
+
+// Select the element you want to add/remove the class from
+const targetElement = document.querySelector("nav");
+
+// Function to add/remove class based on scroll position
+function toggleClassOnScroll() {
+  const scrollPosition = window.scrollY; // Get the vertical scroll position
+  const threshold = 100; // Set a threshold value in pixels for when to add/remove the class
+
+  if (scrollPosition > threshold) {
+    targetElement.classList.add("fade-in");
+  } else {
+    targetElement.classList.remove("fade-in");
+  }
+}
+
+// Attach the event listener
+window.addEventListener("scroll", toggleClassOnScroll);
