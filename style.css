@@ -55,6 +55,7 @@ h5 {
   /* background-color: var(--secondary); */
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(25px);
+  z-index: 9999;
 }
 
 .main-menu {
@@ -126,6 +127,12 @@ h5 {
   justify-content: center;
   padding-top: 40px;
 }
+/*----------- this is after scrolling------- */
+.fade-in .featured-button-inner {
+  padding-top: 10px;
+}
+/*----------- this is after scrolling------- */
+
 .buttons {
   display: flex;
   gap: 10px;
@@ -140,6 +147,9 @@ h5 {
   font-size: 20px;
   font-weight: 500;
   cursor: pointer;
+}
+#donation-button:active {
+  background-color: var(--primary);
 }
 .buttons button:focus {
   background-color: #b4f461;
